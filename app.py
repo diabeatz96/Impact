@@ -45,7 +45,7 @@ def main():
         data_types = {"column_with_error": "int64"}
         
         ### Load only csv with rows whose year is in 2023 data = data[data['year'] == 2023]
-        data = pd.read_csv("data/Expense_Budget.csv", nrows=chunksize, dtype=data_types)
+        data = pd.read_csv("data/2023_data.csv", dtype=data_types)
     except ValueError as e:
         # Extract information about the error
         error_message = str(e)
